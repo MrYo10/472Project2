@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import RequestForm from "./components/RequestForm";
+import SchedulePanel from "./components/SchedulePanel";
+import AllocationResults from "./components/AllocationResults";
+import ResourceList from "./components/ResourceList";
+import "./App.css";
 
 function App() {
+  const [allocations, setAllocations] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Hospital Resource Scheduler</h1>
+      <div className="dashboard">
+        <div className="panel">
+          <RequestForm />
+        </div>
+        <div className="panel">
+          <SchedulePanel setAllocations={setAllocations} />
+        </div>
+      </div>
+      <div className="tables">
+        <AllocationResults allocations={allocations} />
+        <ResourceList />
+      </div>
     </div>
   );
 }
