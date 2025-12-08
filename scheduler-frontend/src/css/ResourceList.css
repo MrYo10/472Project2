@@ -1,0 +1,67 @@
+/* Resource panel container */
+.resource-panel {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Refresh button */
+.refresh-btn {
+  padding: 8px 16px;
+  margin-bottom: 15px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.refresh-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Grid container for resources */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+/* Individual resource card */
+.resource-card {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.resource-card:hover {
+  transform: scale(1.03);
+}
+
+/* Color coding by status */
+.resource-card.Available {
+  background-color: #d1fae5; /* light green */
+}
+.resource-card.Occupied {
+  background-color: #fee2e2; /* light red */
+}
+.resource-card.Maintenance {
+  background-color: #fef3c7; /* light orange */
+}
+
+.status-Available {
+  color: green;
+}
+.status-Occupied {
+  color: red;
+}
+.status-Maintenance {
+  color: orange;
+}
