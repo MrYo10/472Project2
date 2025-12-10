@@ -95,7 +95,7 @@ def test_priority():
               f"Priority: {req.priority.name:<8} Duration: {req.duration} min")
 
     # Expected output
-    print("\n📌 EXPECTED OUTPUT:")
+    print("\n EXPECTED OUTPUT:")
     print("  Priority scheduler processes HIGH priority first:")
     print("  1. Bob     → gets Doctor (HIGH priority)")
     print("  2. Diana   → gets Doctor (HIGH priority)")
@@ -321,7 +321,7 @@ def main():
         print("=" * 80)
 
     except Exception as e:
-        print(f"\n\n❌ ERROR: {e}")
+        print(f"\n\n ERROR: {e}")
         import traceback
         traceback.print_exc()
 
