@@ -220,10 +220,3 @@ npm start
 4. Select a scheduling algorithm (FCFS, Priority, or Round Robin)
 5. View resource allocations and compare algorithm performance
 
-## Contributors
-
-Project for Course 472 - Operating Systems Concepts
-
-## License
-
-This project is for educational purposes.
