@@ -270,7 +270,7 @@ def test_resource_shortage():
         requests.append(req)
         print(f"  {i:2d}. Patient-{i} (Priority: {priority.name})")
 
-    print("\n📌 EXPECTED OUTPUT:")
+    print("\n EXPECTED OUTPUT:")
     print("  Priority scheduler allocates to highest priority first:")
     print("  - Patient-1, Patient-2, Patient-3 (HIGH) get doctors")
     print("  - Patient-4 through Patient-8 (MEDIUM) get doctors")
