@@ -2,14 +2,6 @@
 Simple Test Suite for Scheduling Algorithms
 Demonstrates input, expected output, and actual output for each algorithm
 """
-
-import sys
-import os
-
-# Add backend directory to path
-backend_path = os.path.join(os.path.dirname(__file__), 'backend')
-sys.path.insert(0, backend_path)
-
 from core.resource_manager import ResourceManager
 from schedulers.fcfs_scheduler import FCFSScheduler
 from schedulers.priority_scheduler import PriorityScheduler
